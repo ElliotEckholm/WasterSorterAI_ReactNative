@@ -154,7 +154,7 @@ export default class FetchExample extends React.Component {
           />
           <View style={{ flex: 0, flexDirection: 'row', justifyContent: 'center' }}>
             <TouchableOpacity onPress={this.takePicture.bind(this)} style={styles.capture}>
-              <Text style={{ fontSize: 14 }}> SNAP </Text>
+              <Text style={{ fontSize: 14, color: '#37ad37' }}> SNAP </Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -179,7 +179,7 @@ export default class FetchExample extends React.Component {
 
     return(
       <View style={{flex: 1, paddingTop:50, alignItems: 'center'}}>
-        <Text style={{ fontWeight: 'bold', fontSize: 15}}>{this.state.dataSource}</Text>
+        <Text style={{ fontWeight: 'bold', fontSize: 15, color: '#37ad37'}}>{this.state.dataSource}</Text>
       </View>
     );
   }
@@ -192,25 +192,36 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
   ImageContainer: {
-    flex: 0.6,
-    backgroundColor: 'green',
+    flex: 0.7,
+    position: 'relative',
+    opacity: 1.0,
+    padding: 10,
+    // borderWidth: 2,
+    // borderColor: 'white',
   },
   preview: {
     flex: 1.0,
     justifyContent: 'flex-end',
     alignItems: 'center',
+    opacity: 1.0,
   },
   capture: {
+    position: 'absolute',
+    bottom: 0,
     flex: 0,
-    backgroundColor: '#fff',
+    backgroundColor: 'white',
     borderRadius: 5,
     padding: 15,
     paddingHorizontal: 20,
     alignSelf: 'center',
     margin: 20,
+    zIndex: 100,
+    borderWidth: 2,
+    borderColor: '#37ad37',
   },
   PredictionContainer: {
     flex: 0.4,
+    // backgroundColor: '#cef5ce',
     backgroundColor: 'white',
   },
 });

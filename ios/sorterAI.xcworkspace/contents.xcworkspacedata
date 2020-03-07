@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:sorterAI.xcodeproj">
+      location = "group:/Users/ellioteckholm/Documents/AI/WasteSorterAI/sorterAI/ios/Recycle.ai.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

@@ -41,19 +41,19 @@
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* sorterAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sorterAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* Recycle.aiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Recycle.aiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* sorterAITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sorterAITests.m; sourceTree = "<group>"; };
 		0555C53C537C745AAFCF71FF /* Pods-sorterAITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sorterAITests.release.xcconfig"; path = "Target Support Files/Pods-sorterAITests/Pods-sorterAITests.release.xcconfig"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* sorterAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sorterAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* Recycle.ai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recycle.ai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = sorterAI/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = sorterAI/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = sorterAI/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = sorterAI/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = sorterAI/main.m; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* sorterAI-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sorterAI-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* sorterAI-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sorterAI-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E47B1E0B4A5D006451C7 /* Recycle.ai-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recycle.ai-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* Recycle.ai-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Recycle.ai-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A810D71EE527E22F08FA2FD /* libPods-sorterAITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sorterAITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		409AE17D86632093C334CA7B /* Pods-sorterAITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sorterAITests.debug.xcconfig"; path = "Target Support Files/Pods-sorterAITests/Pods-sorterAITests.debug.xcconfig"; sourceTree = "<group>"; };
 		51DF14F8BDA5F50EC94D6DC4 /* libPods-sorterAI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-sorterAI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,10 +189,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* sorterAI.app */,
-				00E356EE1AD99517003FC87E /* sorterAITests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* sorterAI-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* sorterAI-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* Recycle.ai.app */,
+				00E356EE1AD99517003FC87E /* Recycle.aiTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* Recycle.ai-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* Recycle.ai-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,9 +200,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* sorterAITests */ = {
+		00E356ED1AD99517003FC87E /* Recycle.aiTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "sorterAITests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "Recycle.aiTests" */;
 			buildPhases = (
 				EE6CC90C44C4993A4EA41948 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -214,14 +214,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = sorterAITests;
+			name = Recycle.aiTests;
 			productName = sorterAITests;
-			productReference = 00E356EE1AD99517003FC87E /* sorterAITests.xctest */;
+			productReference = 00E356EE1AD99517003FC87E /* Recycle.aiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* sorterAI */ = {
+		13B07F861A680F5B00A75B9A /* Recycle.ai */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "sorterAI" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Recycle.ai" */;
 			buildPhases = (
 				34696470B897C500565DE499 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -234,14 +234,14 @@
 			);
 			dependencies = (
 			);
-			name = sorterAI;
+			name = Recycle.ai;
 			productName = sorterAI;
-			productReference = 13B07F961A680F5B00A75B9A /* sorterAI.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* Recycle.ai.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* sorterAI-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* Recycle.ai-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "sorterAI-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Recycle.ai-tvOS" */;
 			buildPhases = (
 				87557A3A2D37297A64EC448D /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -254,14 +254,14 @@
 			);
 			dependencies = (
 			);
-			name = "sorterAI-tvOS";
+			name = "Recycle.ai-tvOS";
 			productName = "sorterAI-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* sorterAI-tvOS.app */;
+			productReference = 2D02E47B1E0B4A5D006451C7 /* Recycle.ai-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* sorterAI-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* Recycle.ai-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "sorterAI-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Recycle.ai-tvOSTests" */;
 			buildPhases = (
 				8D12668A6CB82FFD65DE4D13 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -273,9 +273,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "sorterAI-tvOSTests";
+			name = "Recycle.ai-tvOSTests";
 			productName = "sorterAI-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* sorterAI-tvOSTests.xctest */;
+			productReference = 2D02E4901E0B4A5D006451C7 /* Recycle.ai-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -305,7 +305,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "sorterAI" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Recycle.ai" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -319,10 +319,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* sorterAI */,
-				00E356ED1AD99517003FC87E /* sorterAITests */,
-				2D02E47A1E0B4A5D006451C7 /* sorterAI-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* sorterAI-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* Recycle.ai */,
+				00E356ED1AD99517003FC87E /* Recycle.aiTests */,
+				2D02E47A1E0B4A5D006451C7 /* Recycle.ai-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* Recycle.ai-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -558,12 +558,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* sorterAI */;
+			target = 13B07F861A680F5B00A75B9A /* Recycle.ai */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* sorterAI-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* Recycle.ai-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -600,7 +600,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sorterAI.app/sorterAI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Recycle.ai.app/Recycle.ai";
 			};
 			name = Debug;
 		};
@@ -620,7 +620,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sorterAI.app/sorterAI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Recycle.ai.app/Recycle.ai";
 			};
 			name = Release;
 		};
@@ -639,8 +639,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cryptanna.sorterAI;
-				PRODUCT_NAME = sorterAI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cryptanna.Recycle.ai;
+				PRODUCT_NAME = Recycle.ai;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -659,8 +659,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cryptanna.sorterAI;
-				PRODUCT_NAME = sorterAI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cryptanna.Recycle.ai;
+				PRODUCT_NAME = Recycle.ai;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -743,7 +743,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.sorterAI-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sorterAI-tvOS.app/sorterAI-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Recycle.ai-tvOS.app/Recycle.ai-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
@@ -770,7 +770,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.sorterAI-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sorterAI-tvOS.app/sorterAI-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Recycle.ai-tvOS.app/Recycle.ai-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -877,7 +877,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "sorterAITests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "Recycle.aiTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -886,7 +886,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "sorterAI" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Recycle.ai" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -895,7 +895,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "sorterAI-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Recycle.ai-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -904,7 +904,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "sorterAI-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Recycle.ai-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -913,7 +913,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "sorterAI" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Recycle.ai" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
