@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import {ActivityIndicator, AppRegistry, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import {ActivityIndicator, AppRegistry, StyleSheet, Text, TouchableOpacity, View, StatusBar } from 'react-native';
 import { RNCamera } from 'react-native-camera';
 
 console.disableYellowBox = true;
@@ -10,45 +10,14 @@ export default class FetchExample extends React.Component {
     super(props);
     this.state ={
       isLoading: false,
+      pictureTaken: false,
       dataSource: '',
+      top_prediction: '',
+      top_prediction_confidence: null,
 
       backendURL: '',
     }
   }
-
-  // const createFormData = (photo, body) => {
-  //   const data = new FormData();
-  //
-  //   data.append("photo", {
-  //     name: photo.fileName,
-  //     type: photo.type,
-  //     uri:
-  //       photo.uri.replace("file://", "")
-  //   });
-  //
-  //   Object.keys(body).forEach(key => {
-  //     data.append(key, body[key]);
-  //   });
-  //
-  //   return data;
-  // };
-  //
-  // handleUploadPhoto = (imageURL) => {
-  //   fetch("http://ylambda.io/sortai/classify-url", {
-  //     method: "POST",
-  //     body: createFormData(imageURL)
-  //   })
-  //     .then(response => response.json())
-  //     .then(response => {
-  //       console.log("upload succes", response);
-  //       alert("Upload success!");
-  //       this.setState({ photo: null });
-  //     })
-  //     .catch(error => {
-  //       console.log("upload error", error);
-  //       alert("Upload failed!");
-  //     });
-  // };
 
 
  doPostCallback(imageURL){
@@ -57,9 +26,10 @@ export default class FetchExample extends React.Component {
     console.log(imageURL);
 
     let body = new FormData();
-    body.append('file', {uri: imageURL, name: 'photo.jpg', type: 'image/jpg'});
+    body.append('image', {uri: imageURL, name: 'photo.jpg', type: 'image/jpg'});
+    body.append('name', 'hey');
 
-		fetch("http://ylambda.io/sortai/upload/classify-url",
+		fetch("https://ylambda.io/recycleai/upload",
       { method: 'POST',
         headers:
           {
@@ -70,12 +40,16 @@ export default class FetchExample extends React.Component {
       })
       .then(response => response.json())
       .then(response => {
-        var top_prediction = JSON.stringify(response.predictions);
+        var all_predictions = (response.predictions);
+        var top_prediction = response.predictions[0];
+        // console.log("Top Prediction: ")
+        // console.log(top_prediction)
 
-        console.log("calling set label with", top_prediction);
         this.setState({
           isLoading: false,
-          dataSource: top_prediction,
+          dataSource: all_predictions,
+          top_prediction: response.predictions[0][0],
+          top_prediction_confidence: Math.round(100 * response.predictions[0][1]),
         })
 
 
@@ -127,6 +101,7 @@ export default class FetchExample extends React.Component {
    if (this.camera) {
      this.setState({
        isLoading: true,
+       pictureTaken: true
      })
      const options = { quality: 0.5, base64: true };
      const data = await this.camera.takePictureAsync(options);
@@ -140,7 +115,17 @@ export default class FetchExample extends React.Component {
 
   render() {
     return (
+
       <View style={styles.container}>
+      <StatusBar hidden />
+      <View style={{flexDirection:"row",alignSelf:'center'}}>
+          <View style={{paddingTop: 6}}>
+              <Text style={{color: 'black', fontSize: 21, fontWeight:'bold'}}>Recycle</Text>
+          </View>
+          <View style={{paddingTop: 6}}>
+              <Text  style={{color: '#37ad37',fontSize: 21}} >_ai</Text>
+          </View>
+      </View>
 
         <View style={styles.ImageContainer}>
           <RNCamera
@@ -176,12 +161,14 @@ export default class FetchExample extends React.Component {
         </View>
       )
     }
-
-    return(
-      <View style={{flex: 1, paddingTop:50, alignItems: 'center'}}>
-        <Text style={{ fontWeight: 'bold', fontSize: 15, color: '#37ad37'}}>{this.state.dataSource}</Text>
-      </View>
-    );
+    else if(this.state.pictureTaken){
+      return(
+        <View style={{flex: 1, paddingTop:20, alignItems: 'center'}}>
+          <Text style={{ alignText: 'center', fontWeight: 'bold', fontSize: 30, color: '#37ad37'}}>{this.state.top_prediction.toUpperCase()}</Text>
+          <Text style={{ alignText: 'center', fontWeight: 'bold', fontSize: 20, color: 'black'}}>{this.state.top_prediction_confidence}%</Text>
+        </View>
+      );
+    }
   }
 }
 
@@ -192,7 +179,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
   ImageContainer: {
-    flex: 0.7,
+    flex: 0.8,
     position: 'relative',
     opacity: 1.0,
     padding: 10,
@@ -220,7 +207,7 @@ const styles = StyleSheet.create({
     borderColor: '#37ad37',
   },
   PredictionContainer: {
-    flex: 0.4,
+    flex: 0.3,
     // backgroundColor: '#cef5ce',
     backgroundColor: 'white',
   },
